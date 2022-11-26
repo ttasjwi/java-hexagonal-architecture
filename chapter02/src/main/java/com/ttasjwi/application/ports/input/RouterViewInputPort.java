@@ -3,6 +3,7 @@ package com.ttasjwi.application.ports.input;
 import com.ttasjwi.application.ports.output.RouterViewOutputPort;
 import com.ttasjwi.application.usecases.RouterViewUseCase;
 import com.ttasjwi.domain.Router;
+import com.ttasjwi.domain.RouterSearch;
 
 import java.util.List;
 import java.util.function.Predicate;
@@ -18,6 +19,6 @@ public class RouterViewInputPort implements RouterViewUseCase {
     @Override
     public List<Router> getRouters(Predicate<Router> filter) {
         List<Router> routers = routerListOutputPort.fetchRouters();
-        return Router.retrieveRouter(routers, filter);
+        return RouterSearch.retrieveRouter(routers, filter);
     }
 }

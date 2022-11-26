@@ -1,9 +1,6 @@
 package com.ttasjwi.domain;
 
-
-import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class Router {
 
@@ -30,15 +27,6 @@ public class Router {
 
     private static Predicate<Router> isEdge(){
         return p -> p.getRouterType() == RouterType.EDGE;
-    }
-
-    /**
-     * 필터 조건에 맞는 라우터들만 걸러서, List로 반환
-     */
-    public static List<Router> retrieveRouter(List<Router> routers, Predicate<Router> predicate){
-        return routers.stream()
-                .filter(predicate)
-                .collect(Collectors.<Router>toList());
     }
 
     public RouterType getRouterType(){
