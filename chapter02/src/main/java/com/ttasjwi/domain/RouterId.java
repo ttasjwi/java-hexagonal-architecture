@@ -1,21 +1,21 @@
 package com.ttasjwi.domain;
 
-/**
- * Router의 식별자
- */
+import java.util.UUID;
+
 public class RouterId {
 
-    private String id;
+    private final UUID id;
 
-    private RouterId(String id){
+    private RouterId(UUID id){
         this.id = id;
     }
 
-    /**
-     * 정적 팩토리 메서드
-     */
-    public static RouterId of(String id){
-        return new RouterId(id);
+    public static RouterId withId(String id){
+        return new RouterId(UUID.fromString(id));
+    }
+
+    public static RouterId withoutId() {
+        return new RouterId(UUID.randomUUID());
     }
 
     @Override
