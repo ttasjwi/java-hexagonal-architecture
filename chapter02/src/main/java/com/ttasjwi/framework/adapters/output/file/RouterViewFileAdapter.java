@@ -1,9 +1,9 @@
 package com.ttasjwi.framework.adapters.output.file;
 
 import com.ttasjwi.application.ports.output.RouterViewOutputPort;
-import com.ttasjwi.domain.Router;
-import com.ttasjwi.domain.RouterId;
-import com.ttasjwi.domain.RouterType;
+import com.ttasjwi.domain.entity.Router;
+import com.ttasjwi.domain.vo.RouterId;
+import com.ttasjwi.domain.vo.RouterType;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

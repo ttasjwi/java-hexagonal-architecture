@@ -2,8 +2,8 @@ package com.ttasjwi.application.ports.input;
 
 import com.ttasjwi.application.ports.output.RouterViewOutputPort;
 import com.ttasjwi.application.usecases.RouterViewUseCase;
-import com.ttasjwi.domain.Router;
-import com.ttasjwi.domain.RouterSearch;
+import com.ttasjwi.domain.entity.Router;
+import com.ttasjwi.domain.service.RouterSearch;
 
 import java.util.List;
 import java.util.function.Predicate;

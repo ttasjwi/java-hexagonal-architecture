@@ -1,6 +1,6 @@
 package com.ttasjwi.application.ports.output;
 
-import com.ttasjwi.domain.Router;
+import com.ttasjwi.domain.entity.Router;
 
 import java.util.List;
 

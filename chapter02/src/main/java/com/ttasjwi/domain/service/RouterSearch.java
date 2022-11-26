@@ -1,4 +1,6 @@
-package com.ttasjwi.domain;
+package com.ttasjwi.domain.service;
+
+import com.ttasjwi.domain.entity.Router;
 
 import java.util.List;
 import java.util.function.Predicate;

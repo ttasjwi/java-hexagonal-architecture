@@ -1,4 +1,4 @@
-package com.ttasjwi.domain;
+package com.ttasjwi.domain.vo;
 
 import java.util.UUID;
 

@@ -1,7 +1,6 @@
-package com.ttasjwi.domain;
+package com.ttasjwi.domain.vo;
 
 public enum RouterType {
     EDGE,
     CORE;
 }
-

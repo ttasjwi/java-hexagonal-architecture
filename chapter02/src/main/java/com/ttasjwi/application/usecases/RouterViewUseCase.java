@@ -1,6 +1,6 @@
 package com.ttasjwi.application.usecases;
 
-import com.ttasjwi.domain.Router;
+import com.ttasjwi.domain.entity.Router;
 
 import java.util.List;
 import java.util.function.Predicate;

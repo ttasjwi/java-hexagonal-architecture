@@ -2,8 +2,8 @@ package com.ttasjwi.framework.adapters.input.stdin;
 
 import com.ttasjwi.application.ports.input.RouterViewInputPort;
 import com.ttasjwi.application.usecases.RouterViewUseCase;
-import com.ttasjwi.domain.Router;
-import com.ttasjwi.domain.RouterType;
+import com.ttasjwi.domain.entity.Router;
+import com.ttasjwi.domain.vo.RouterType;
 import com.ttasjwi.framework.adapters.output.file.RouterViewFileAdapter;
 
 import java.util.List;

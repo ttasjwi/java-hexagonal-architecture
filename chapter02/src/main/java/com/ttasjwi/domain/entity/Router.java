@@ -1,4 +1,7 @@
-package com.ttasjwi.domain;
+package com.ttasjwi.domain.entity;
+
+import com.ttasjwi.domain.vo.RouterId;
+import com.ttasjwi.domain.vo.RouterType;
 
 import java.util.function.Predicate;
 
