@@ -7,17 +7,9 @@ public class Activity {
     private final String srcHost;
     private final String dstHost;
 
-    public Activity(String description) {
-        this.srcHost = description.split(">")[0];
-        this.dstHost = description.split(">")[1];
-    }
-
-    public String retrieveSrcHost() {
-        return this.srcHost;
-    }
-
-    public String retrieveDstHost() {
-        return this.dstHost;
+    public Activity(String srcHost, String dstHost) {
+        this.srcHost = srcHost;
+        this.dstHost = dstHost;
     }
 
     @Override
