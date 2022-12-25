@@ -1,7 +1,10 @@
 package com.ttasjwi.domain.entity;
 
+import com.ttasjwi.domain.policy.RegexEventParser;
+import com.ttasjwi.domain.policy.SplitEventParser;
 import com.ttasjwi.domain.vo.Activity;
 import com.ttasjwi.domain.vo.EventId;
+import com.ttasjwi.domain.vo.ParsePolicyType;
 import com.ttasjwi.domain.vo.Protocol;
 
 import java.time.OffsetDateTime;
@@ -19,6 +22,17 @@ public class Event implements Comparable<Event> {
         this.timestamp = timestamp;
         this.protocol = protocol;
         this.activity = activity;
+    }
+
+    public static Event parsedEvent(String unparsedEvent, ParsePolicyType policyType) {
+        switch (policyType) {
+            case REGEX:
+                return new RegexEventParser().parseEvent(unparsedEvent);
+            case SPLIT:
+                return new SplitEventParser().parseEvent(unparsedEvent);
+            default:
+                throw new IllegalArgumentException("Invalid policy");
+        }
     }
 
     @Override
